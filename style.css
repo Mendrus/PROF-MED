@@ -47,6 +47,7 @@ a.active {
     margin-top: 30px;
     margin-bottom: 20px;
     padding: 10px 10px 10px;
+    height: 60vh;
  }
    article h1 {
     font-size: 30px;
@@ -100,6 +101,10 @@ article h2 {
     background-color: white;
     padding-bottom: 15px;
     border-bottom: 2px  solid crimson;
+}
+.mail{
+    text-align: center;
+    margin: 0 38%;
 }
 .hour {
     text-align: center;
@@ -244,6 +249,19 @@ button:hover:after {
    border-radius: 50%;
    left: 50%;
    transform: translateX(-50%);
+}
+#now {
+height: 300px;
+width: 100%;
+color: black;
+margin: 35px auto;
+font-size: 20px;
+text-align: justify;
+background:linear-gradient(
+    to top right,
+    grey,
+    white 
+);
 }
 
 
