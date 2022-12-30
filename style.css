@@ -1,6 +1,7 @@
-*{margin: 0; padding: 0
-font family: source, arial;
-box-sizing: border-box;
+* {
+    margin: 0; padding: 0;
+    font-family: Source, Arial, sans-serif;
+    box-sizing: border-box;
 }
 :root{
     --color-dark: #361999;
@@ -11,9 +12,8 @@ body {
     rgb(190, 188, 188),
     rgb(179, 176, 176)
     );
+    box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.5);
 }
-    
-
 #wrapper {
     max-width: 1000;
     margin: 0 auto;
@@ -35,7 +35,7 @@ a.menu {
     text-decoration: none;
     text-align: center;
     font-size: 20px;
-    transition: all 1s ease;
+    transition: all 0,5s ease;
 }
 a.menu:hover {
     background-color: crimson;
@@ -55,6 +55,11 @@ a.active {
     background-color: white;
     padding-bottom: 15px;
     border-bottom: 2px  solid crimson;
+  }
+  .price {
+    text-align: center;
+    text-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.3);
+    font-style: italic;
   }
 img.left {
 float: left;
@@ -79,11 +84,6 @@ footer {
     text-align: center;
     margin-top: 10px;
 }
-img.price {
-    width: none;
-    margin: 30px 18%;
- 
-}
 .number {
     text-align: center;
     margin: 0;
@@ -104,19 +104,8 @@ article h2 {
 .hour {
     text-align: center;
     margin-top: 5px;
-    
-}
-.write {
-    text-align: left;
-    font-size: small;
-    background-color:white;
-    margin: none;
-    padding-top: 10px;
-}
-button {
-    margin: 5px 0 0 97px;
-    color: black;
-    background-color: grey;
+    margin-bottom: 0;
+
 }
 section.loginbox h1 {
     font-size: 30px;
@@ -170,19 +159,23 @@ label {
     color: white;
     font-size: 18px;
     position: absolute;
-    left: 43%;
     transform: translateY(+125%);
     opacity: 0.4;
-    transition: left 0.1s, opacity 0,3s;
+    transition: right 0.3s, opacity 0.3s;
     font-style: italic;
     cursor: text;
+    right: 51%;
+}
+.label_user {
+    right: 54%;
 }
 input {
     width: 100%;
 }
-input:focus + labeL{
-    left: 20px;
+input:focus + label {
+    right: 20px;
     opacity: 0;
+    !--- naprawić literki powracajace na miejsce loginu i hasła---!
 }
 input:hover,
 button:hover {

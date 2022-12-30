@@ -32,18 +32,18 @@
       <section class="loginbox">
         <h1>Logowanie</h1>
         <article class="boxlogin">
-          <form class="log">
+          <form class="log" autocomplete="off">
             <div class="form_icon" aria-hidden="true"></div>
             <div class="from_input-container">
               <input id="user" type="text" />
-              <label for="">User</label>
+              <label for="user" class="label_user">User</label>
             </div>
             <div class="from input-container">
               <input type="password" id="password" />
               <label for="password">Password</label>
             </div>
             <div class="spacer"></div>
-            <button>Login</button>
+            <button class="login_button" type="button" onclick="getinfo()">Login</button>
           </form>
         </article>
       </section>
@@ -51,5 +51,6 @@
         Zrobiłem tą strone w pierwszym tygodniu swojej nauki programowania!
       </footer>
     </div>
+    <script src="login.js"></script>
   </body>
 </html>
